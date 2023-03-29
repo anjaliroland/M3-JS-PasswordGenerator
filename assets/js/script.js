@@ -48,7 +48,7 @@ function generatePassword() {
   }
 
   for (let i = 0; i < validLength.length; i++) {
-    var randomChar = passwordArr[Math.floor(Math.random() *charLength.length)];
+    var newPassword = passwordArr[Math.floor(Math.random() *charLength.length)];
     
   }
 
