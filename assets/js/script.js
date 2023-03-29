@@ -7,7 +7,7 @@
 
 // TODO: create a variable for selected criteria✅
 
-// TODO: make generatePassword()✅
+// TODO: make generatePassword function that creates password based on selected criteria✅
   //TODO: create an prompt asking: "How many characters would you like your new password to have? (Must between 8 - 128)"✔️
       //TODO:if not user is told "Invalid input, password length must be between 8 - 128 characters. Please try again."✔️
       //TODO: if accepted number following confirms will be asked:
@@ -15,11 +15,10 @@
         //TODO:"Do you want your new password to include uppercase letters?"✔️
         //TODO:"Do you want your new password to include numbers?"✔️
         //TODO:"Do you want your new password to include special characters?"✔️   
+
   //TODO:create IF statement checking if atleast one character has been selected
     //TODO:if yes then password will be generated and displayed
     //TODO:if no then asked to repeat prompts
-
-// TODO: create function to write a password meeting selected criteria
 
 var lowercaseChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var uppercaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -30,8 +29,10 @@ var passwordArr = [];
 
 function generatePassword() {
   charLength = parseInt(prompt("How many characters would you like your new password to have? (Must between 8 - 128)"));
+
   if (isNaN(charLength) || charLength < 8 || charLength > 128) {
     window.alert("Invalid input, password length must be between 8 - 128 characters. Please try again.");
+    generatePassword();
   } else {
     if (confirm("Do you want your new password to include lowercase letters?")) {
       passwordArr = passwordArr.concat(lowercaseChar);
