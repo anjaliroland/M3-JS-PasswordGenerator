@@ -8,7 +8,7 @@ var specialChar = ['!', '"', '#', '$', '%', '&', '(', ')', '*', '+', '-', '.', '
 
 
 // TODO: create a function that asks the following:
-              //"How many characters would you like your password to have? (Must between 8 - 128 characters)"
+              //"How many characters would you like your new password to have? (Must between 8 - 128 characters)"
                     // if accepted number following prompts will be asked:
                           //"Do you want your new password to include lowercase letters?"
                           //"Do you want your new password to include uppercase letters?"
@@ -16,12 +16,27 @@ var specialChar = ['!', '"', '#', '$', '%', '&', '(', ')', '*', '+', '-', '.', '
                           //"Do you want your new password to include special characters?"
                     // if not user is told "Invalid input, character length must be between 8 - 128 characters. Please try again."
 
+
+function askPrompts() {
+  charLength = parseInt(prompt("How many characters would you like your new password to have? (Must between 8 - 128 characters)"));
+  var validLength = (charLength >= 8 && charLength <= 128);
+  if (charLength === validLength) {
+    
+  }
+
+};
+
 // TODO: create IF statement checking if atleast one character has been selected
               //if yes then password will be generated and displayed
               //if no then asked to repeat prompts
+function validInput() {
+
+};
               
 // TODO: create function to write a password meeting selected criteria
+function generatePassword() {
 
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
