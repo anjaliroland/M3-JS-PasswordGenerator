@@ -47,11 +47,12 @@ function generatePassword() {
     } 
   }
 
-  for (let i = 0; i < validLength.length; i++) {
-    var newPassword = passwordArr[Math.floor(Math.random() *charLength.length)];
-    
-  }
-
+  for (let i = 0; i < charLength.length; i++) {
+    var newPassword = charLength[Math.floor(Math.random() *passwordArr.length)];
+  };
+  
+  return newPassword;
+  
 };
               
 
