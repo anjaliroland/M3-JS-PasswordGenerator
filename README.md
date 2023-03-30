@@ -1,13 +1,8 @@
 # JavaScript Password Generator
 
 ## Description
-<!--
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn? -->
+For module 03 of boot camp we were given starter code with completed HTML and CSS files, and a started JavaScript file. We had to complete the JavaScript to make a working password generator. Using what we learned this past week, Google, and help from AskBCS I was able to finish writing the JavaScript so that the deployed password generator meets the criteria below.
 
 ### User Story
 
@@ -38,20 +33,20 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 
-<!--
+
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+When clicking on the first link below, you will be brought to a page that looks like the screenshot below. When you click the red 'Generate Password' a popup will appear asking how many characters to include in the new password, if the number is in the accepted range, more popups will appear asking for clarification on character types to include in the password. As long as at least one character type is chosen a new password will then be generated and displayed in the center box. If a number is chosen outside of the accepted range or no character type is chosen you will be asked to try again, until an accepted response is input.
 
-![screenshot](./assets/images/screenshot.png) -->
+![screenshot](./assets/images/screenshot.png) 
 
 ## License
 
 Please refer to the LICENSE in the repo.
 
-<!--
+
 ## Links
 
-Deployed Application: 
+Deployed Application: https://anjaliroland.github.io/M3-JS-PasswordGenerator/
 
-Repository:  -->
+Repository: https://github.com/anjaliroland/M3-JS-PasswordGenerator
