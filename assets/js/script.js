@@ -42,13 +42,13 @@ function generatePassword() {
 
 // randomly chooses characters from the array made of selected criteria
   } else {
-    var password = "";
+    var newPassword = "";
     for (let i = 0; i < charLength; i++) {
-      password += passwordArr[Math.floor(Math.random() *passwordArr.length)];
+      newPassword += passwordArr[Math.floor(Math.random() *passwordArr.length)];
     };
 
-// ties function into code below to display generated password
-  return password;
+// returns selected characters from for loop above that form the new password
+  return newPassword;
   };
 };
               
