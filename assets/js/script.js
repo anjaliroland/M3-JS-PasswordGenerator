@@ -16,9 +16,9 @@
         //TODO:"Do you want your new password to include numbers?"✔️
         //TODO:"Do you want your new password to include special characters?"✔️   
 
-  //TODO:create IF statement checking if atleast one character has been selected
-    //TODO:if yes then password will be generated and displayed
-    //TODO:if no then asked to repeat prompts
+  //TODO:create IF statement checking if atleast one character has been selected✅
+    //TODO:if yes then password will be generated and displayed✔️
+    //TODO:if no then asked to repeat prompts✔️
 
 var lowercaseChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var uppercaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -46,15 +46,19 @@ function generatePassword() {
     if (confirm("Do you want your new password to include special characters?")) {
       passwordArr = passwordArr.concat(specialChar);
     } 
-  }
+  } ;
 
-  var password = "";
-  for (let i = 0; i < charLength; i++) {
-     password += passwordArr[Math.floor(Math.random() *passwordArr.length)];
-  };
-  
+  if (passwordArr.length === 0) {
+    window.alert("Must select at least one character type.");
+    generatePassword();
+  } else {
+    var password = "";
+    for (let i = 0; i < charLength; i++) {
+      password += passwordArr[Math.floor(Math.random() *passwordArr.length)];
+    };
+
   return password;
-  
+  };
 };
               
 
@@ -63,6 +67,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
