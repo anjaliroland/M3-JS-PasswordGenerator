@@ -38,7 +38,7 @@ THEN the password is either displayed in an alert or written to the page
 
 When clicking on the first link below, you will be brought to a page that looks like the screenshot below. When you click the red 'Generate Password' a popup will appear asking how many characters to include in the new password, if the number is in the accepted range, more popups will appear asking for clarification on character types to include in the password. As long as at least one character type is chosen a new password will then be generated and displayed in the center box. If a number is chosen outside of the accepted range or no character type is chosen you will be asked to try again, until an accepted response is input.
 
-![screenshot](./assets/images/screenshot.png) 
+![screenshot](./assets/images/Screenshot.png) 
 
 ## License
 
